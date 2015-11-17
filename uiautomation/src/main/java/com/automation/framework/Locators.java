@@ -1,7 +1,7 @@
 package com.automation.framework;
 
 public interface Locators {
-	interface Generic {
+	interface Generic { 
 		public static final String logOutBtn = "id:ext-gen160";
 		public static final String submitBtn = "xpath://button[text()='Submit']";
 		public static final String accessDenied = "xpath:/html/body/div[1]/div/div[1]/div[2]/form/div[4]/button";
