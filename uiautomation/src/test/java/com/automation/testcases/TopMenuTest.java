@@ -8,46 +8,77 @@ import com.automation.pages.HeatLoginPage;
 
 public class TopMenuTest extends BaseTest {
 	
-	@Test
+/*@Test
 	public void login() throws Exception {
 
-		heatLoginPage.loginToApp("connector.test", "conrotcd3$");
-		
-	}
+		topMenu.loginToApp("connector.test", "conrotcd3$");
+		topMenu.Incident();
+		//topMenu.ServiceRequest();
+		//topMenu.Problem();
+		//topMenu.change();
+		topMenu.Release();
+		topMenu.Knowledge();
+		topMenu.CI();
+		topMenu.More();
+	}*/
 
 	@Test
 	public void incidentTest() throws Exception {
+		topMenu.loginToApp("connector.test", "conrotcd3$");
 		topMenu.Incident();
+		topMenu.logoutFrmApp();
+
 	}
 	
-	@Test
+	/*@Test
 	public void ServiceRequestTest() throws Exception {
-		topMenu.ServiceRequest();
+		topMenu.loginToApp("connector.test", "conrotcd3$");
+		topMenu.Incident();	
+		topMenu.logoutFrmApp();
+
 	}
 	@Test
 	public void ProblemTest() throws Exception {
+		topMenu.loginToApp("connector.test", "conrotcd3$");
 		topMenu.Problem();
+		topMenu.logoutFrmApp();
+
 	}
 	@Test
 	public void changeTest() throws Exception {
+		topMenu.loginToApp("connector.test", "conrotcd3$");
 		topMenu.change();
+		topMenu.logoutFrmApp();
+
 	}
 	@Test
 	public void ReleaseTest() throws Exception {
+		topMenu.loginToApp("connector.test", "conrotcd3$");
 		topMenu.Release();
+		topMenu.logoutFrmApp();
+
 	}
 	@Test
 	public void KnowledgeTest() throws Exception {
+		topMenu.loginToApp("connector.test", "conrotcd3$");
 		topMenu.Knowledge();
+		topMenu.logoutFrmApp();
+
 	}
 	@Test
 	public void CItest() throws Exception{
-	topMenu.CI();
+		topMenu.loginToApp("connector.test", "conrotcd3$");
+		topMenu.CI();
+		topMenu.logoutFrmApp();
+
 	}
 	@Test
 	public void MoreTest() throws Exception{
-	topMenu.More();
-	}
+		topMenu.loginToApp("connector.test", "conrotcd3$");
+		topMenu.More();
+		topMenu.logoutFrmApp();
+
+	}*/
 	
 	
 	

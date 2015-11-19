@@ -57,7 +57,7 @@ public class SeleniumWrapper extends ElementLocators {
 		String locatorType = locator.split(":")[0];
 		String locatorValue = locator.split(":")[1];
 		By by = getElementType(locatorType, locatorValue);
-		WebDriverWait wait = new WebDriverWait(driver, 60);
+		WebDriverWait wait = new WebDriverWait(driver, 20);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(by));
 
 	}

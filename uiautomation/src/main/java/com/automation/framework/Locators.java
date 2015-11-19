@@ -28,20 +28,21 @@ public interface Locators {
        public static final String Release ="id:ext-gen40";
        public static final String Change = "id:ext-gen36";
        public static final String plusButton = "id:ext-gen17";
-      // public static final String moreLink = "id:ext-gen1029";
+      // public static final String moreLink = "id:ext-gen1029"
        public static final String Knowledge ="id:ext-gen44";
        public static final String CI ="id:ext-gen48";
        public static final String More= "id:ext-gen158";
-       //public static final String NewIncident ="link:New&nbsp;Incident";
        public static final String NewIncident ="id:ext-gen139";
-
-       public static final String NewService ="link:New Service Request";
-       public static final String NewProblem="link:New Problem";
-       public static final String NewChange ="link:New Change";
-       public static final String NewRelease ="link:New Release";
-       public static final String NewKnowledge="link:New Record Menu";
-       public static final String NewCI= "link:New";
+       //public static final String NewService ="link:New Service Request";
+       public static final String NewService ="id:ext-gen139";
+      // public static final String NewProblem="link:New Problem";
+       public static final String NewProblem="id:ext-gen139";
+       public static final String NewChange ="id:ext-gen139";
+       public static final String NewRelease ="xpath://*[@id='ext-gen139']";
+       public static final String NewKnowledge="id:ext-gen158";
+       public static final String NewCI= "id:ext-gen158";
        public static final String moreLinks="id:ext-comp-1306";
+       public static final String PlusLinks ="id:ext-comp-1010";
 
     	   
             
