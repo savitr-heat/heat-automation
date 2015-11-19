@@ -13,6 +13,7 @@ import org.testng.annotations.BeforeTest;
 
 import com.automation.framework.DriverFactory.browserType;
 import com.automation.pages.HeatLoginPage;
+import com.automation.pages.TopMenu;
 import com.automation.pages.LoginPage;
 
 public class BaseTest extends ExcelReader {
@@ -20,6 +21,7 @@ public class BaseTest extends ExcelReader {
 	WebDriver driver;
 	protected LoginPage loginPage;
 	protected HeatLoginPage heatLoginPage;
+	protected TopMenu topMenu;
 	ExcelReader reader;
 
 	@BeforeTest
@@ -27,6 +29,7 @@ public class BaseTest extends ExcelReader {
 
 		loginPage = new LoginPage(driver);
 		heatLoginPage = new HeatLoginPage(driver);
+		topMenu = new TopMenu(driver);
 		reader = new ExcelReader();
 	}
 

@@ -20,4 +20,31 @@ public interface Locators {
 		public static final String LogOutBtn ="id:ext-gen160";
 		public static final String confirmYes ="id:ext-gen214";
 	}
+	interface TopMenu {
+       public static final String home = "id:ext-gen20";
+       public static final String incidentMenu = "id:ext-gen24";
+       public static final String ServiceRequest = "id:ext-gen28";
+       public static final String Problem = "id:ext-gen32";
+       public static final String Release ="id:ext-gen40";
+       public static final String Change = "id:ext-gen36";
+       public static final String plusButton = "id:ext-gen17";
+      // public static final String moreLink = "id:ext-gen1029";
+       public static final String Knowledge ="id:ext-gen44";
+       public static final String CI ="id:ext-gen48";
+       public static final String More= "id:ext-gen158";
+       //public static final String NewIncident ="link:New&nbsp;Incident";
+       public static final String NewIncident ="id:ext-gen139";
+
+       public static final String NewService ="link:New Service Request";
+       public static final String NewProblem="link:New Problem";
+       public static final String NewChange ="link:New Change";
+       public static final String NewRelease ="link:New Release";
+       public static final String NewKnowledge="link:New Record Menu";
+       public static final String NewCI= "link:New";
+       public static final String moreLinks="id:ext-comp-1306";
+
+    	   
+            
+	}
+	
 }

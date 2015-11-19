@@ -65,7 +65,8 @@ public class SeleniumWrapper extends ElementLocators {
 	private WebElement getElement(String locator) {
 
 		String locatorType = locator.split(":")[0];
-		String locatorValue = locator.split(":")[1];
+		
+		String locatorValue =  locator.split(":")[1];
 		// System.out.println(locatorType + " and " + locatorValue);
 		By by = getElementType(locatorType, locatorValue);
 		return driver.findElement(by);
@@ -126,6 +127,26 @@ public class SeleniumWrapper extends ElementLocators {
 		while (!(getElement(locator).isDisplayed()) && count < 10) {
 			try {
 				Thread.sleep(1000);
+				count++;
+			} catch (InterruptedException e) {
+
+			}
+
+		}
+		return getElement(locator).isDisplayed();
+
+	}
+
+	
+	protected boolean isElementDisplayed(String locator, Long time) {
+
+		int count = 1;
+		if (getElement(locator).isDisplayed())
+			return true;
+
+		while (!(getElement(locator).isDisplayed()) && count < 10) {
+			try {
+				Thread.sleep(time);
 				count++;
 			} catch (InterruptedException e) {
 
