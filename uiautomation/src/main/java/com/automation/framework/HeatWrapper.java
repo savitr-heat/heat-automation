@@ -30,6 +30,7 @@ public class HeatWrapper extends SeleniumWrapper {
 			throw new Exception("User name & password are mandatory");
 		}
 
+		isElementDisplayed(Locators.LoginPage.username);
 		sendTextToElement(Locators.LoginPage.username, username);
 		sendTextToElement(Locators.LoginPage.password, password);
 		clickElement(Locators.LoginPage.loginBtn);
