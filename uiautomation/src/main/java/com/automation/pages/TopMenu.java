@@ -3,41 +3,17 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 
+import com.automation.framework.HeatWrapper;
 import com.automation.framework.Locators;
-import com.automation.framework.SeleniumWrapper;
 
 
-public class TopMenu extends SeleniumWrapper {
+public class TopMenu extends HeatWrapper {
 	
 	public TopMenu(WebDriver driver) throws IOException{
 
 		super(driver);
 	}
 	
-	public void loginToApp(String username, String password) throws Exception
-	{
-		if (username == null && password == null)
-		{
-			throw new Exception("User name & password are mandatory");
-		}
-		
-		sendTextToElement(Locators.LoginPage.username, username);
-		sendTextToElement(Locators.LoginPage.password, password);
-		clickElement(Locators.LoginPage.loginBtn);
-		
-		if(isElementDisplayed(Locators.Generic.submitBtn))
-		{
-			clickElement(Locators.Generic.submitBtn);
-		}
-		isElementDisplayed(Locators.Generic.logOutBtn);
-	}
-public void logoutFrmApp() throws Exception{
-		
-		clickElement(Locators.LogOutPage.LogOutBtn);
-		clickElement(Locators.LogOutPage.confirmYes);
-		
-		
-	}
 	
 	public void Incident () throws Exception{
 		isElementDisplayed(Locators.TopMenu.NewIncident);
@@ -77,6 +53,10 @@ public void logoutFrmApp() throws Exception{
 		isElementDisplayed(Locators.TopMenu.More);
 		clickElement(Locators.TopMenu.moreLinks);	
 		
+	}
+	
+	public void LogoImage() throws Exception{
+		isElementDisplayed(Locators.Generic.Logo);
 	}
 
 }
