@@ -56,7 +56,7 @@ public class HeatWrapper extends SeleniumWrapper {
 	public void logoutFrmApp() throws Exception {
 
 		clickElement(Locators.LogOutPage.LogOutBtn);
-		clickElement(Locators.LogOutPage.confirmYes);
+		clickElement(Locators.Generic.confirmYes);
 
 	}
 

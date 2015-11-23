@@ -1,49 +1,35 @@
 package com.automation.testcases;
 
 import org.testng.annotations.Test;
-
 import com.automation.framework.BaseTest;
-import com.automation.pages.HomePage;
-import com.automation.pages.HeatLoginPage;
 
 public class TopMenuTest extends BaseTest {
 	
-/*@Test
-	public void login() throws Exception {
+ 
 
-		topMenu.loginToApp("connector.test", "conrotcd3$");
-		topMenu.Incident();
-		//topMenu.ServiceRequest();
-		//topMenu.Problem();
-		//topMenu.change();
-		topMenu.Release();
-		topMenu.Knowledge();
-		topMenu.CI();
-		topMenu.More();
-	}*/
-
-	@Test
+/*	@Test
 	public void incidentTest() throws Exception {
 		topMenu.loginToApp("connector.test", "conrotcd3$");
 		topMenu.Incident();
 		topMenu.logoutFrmApp();
 
-	}
+	} 
 	
-	/*@Test
+	@Test
 	public void ServiceRequestTest() throws Exception {
 		topMenu.loginToApp("connector.test", "conrotcd3$");
-		topMenu.Incident();	
+		topMenu.ServiceRequest();
 		topMenu.logoutFrmApp();
 
 	}
+	
 	@Test
 	public void ProblemTest() throws Exception {
 		topMenu.loginToApp("connector.test", "conrotcd3$");
 		topMenu.Problem();
 		topMenu.logoutFrmApp();
 
-	}
+	}*/
 	@Test
 	public void changeTest() throws Exception {
 		topMenu.loginToApp("connector.test", "conrotcd3$");
@@ -51,7 +37,7 @@ public class TopMenuTest extends BaseTest {
 		topMenu.logoutFrmApp();
 
 	}
-	@Test
+	/*@Test
 	public void ReleaseTest() throws Exception {
 		topMenu.loginToApp("connector.test", "conrotcd3$");
 		topMenu.Release();
@@ -78,8 +64,13 @@ public class TopMenuTest extends BaseTest {
 		topMenu.More();
 		topMenu.logoutFrmApp();
 
+	}
+	@Test
+	public void LogoImageTest() throws Exception{
+		topMenu.loginToApp("connector.test", "conrotcd3$");
+		topMenu.LogoImage();
+		 System.out.println("Sucess" );
 	}*/
-	
 	
 	
 	

@@ -14,6 +14,7 @@ import com.automation.framework.DriverFactory.browserType;
 import com.automation.pages.HeatLoginPage;
 import com.automation.pages.LoginPage;
 import com.automation.pages.TopMenu;
+import com.automation.pages.CommonPage;
 
 public class BaseTest extends ExcelReader {
 
@@ -21,6 +22,7 @@ public class BaseTest extends ExcelReader {
 	protected LoginPage loginPage;
 	protected HeatLoginPage heatLoginPage;
 	protected TopMenu topMenu;
+	protected CommonPage commonPage;
 	ExcelReader reader;
 
 	@BeforeTest
@@ -31,6 +33,7 @@ public class BaseTest extends ExcelReader {
 		loginPage = new LoginPage(driver);
 		heatLoginPage = new HeatLoginPage(driver);
 		topMenu = new TopMenu(driver);
+		commonPage =new CommonPage(driver);
 		reader = new ExcelReader();
 		
 	}

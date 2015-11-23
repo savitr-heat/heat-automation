@@ -16,8 +16,10 @@ public class TopMenu extends HeatWrapper {
 	
 	
 	public void Incident () throws Exception{
-		isElementDisplayed(Locators.TopMenu.NewIncident);
+		isElementDisplayed(Locators.TopMenu.incidentMenu);
 		clickElement(Locators.TopMenu.incidentMenu);
+		isElementDisplayed(Locators.TopMenu.NewIncident);
+
 		
 	} 
 	public void ServiceRequest() throws Exception{
@@ -30,9 +32,11 @@ public class TopMenu extends HeatWrapper {
 		clickElement(Locators.TopMenu.Problem);
 	}
 	public void change() throws Exception{
+		
+		isElementDisplayed(Locators.TopMenu.Change);	
+		clickElement(Locators.TopMenu.Change);
 		isElementDisplayed(Locators.TopMenu.NewChange);	
 
-		clickElement(Locators.TopMenu.Change);
 	
 	}
 	public void Release() throws Exception{
@@ -55,9 +59,5 @@ public class TopMenu extends HeatWrapper {
 		
 	}
 	
-	public void LogoImage() throws Exception{
-		isElementDisplayed(Locators.Generic.Logo);
-	}
-
 }
 
