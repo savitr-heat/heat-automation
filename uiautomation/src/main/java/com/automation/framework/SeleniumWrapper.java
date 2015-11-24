@@ -41,6 +41,12 @@ public class SeleniumWrapper extends ElementLocators {
 		getElement(locator).click();
 
 	}
+	
+	protected String getElementText(String locator)
+	{
+		waitForElementToClick(locator);
+		return getElement(locator).getText();
+	}
 
 	private void waitForElementToClick(String locator) {
 
