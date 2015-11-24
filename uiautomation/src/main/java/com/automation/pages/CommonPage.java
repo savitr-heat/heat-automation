@@ -50,6 +50,22 @@ public class CommonPage extends HeatWrapper{
 		clickElement(Locators.Common.More);
 		isElementDisplayed(Locators.Common.MorePop);
 	}
- 
+	public void Locale() throws Exception {
+		isElementDisplayed(Locators.Common.Locale);
+		clickElement(Locators.Common.Locale);
+		isElementDisplayed(Locators.Common.LocaleSubMenu);
+		isElementDisplayed(Locators.Common.SelectedLocale);
+		//System.out.print("")
+	}
+ public void Incident() throws Exception{
+	 	isElementDisplayed(Locators.TopMenu.incidentMenu);
+		clickElement(Locators.TopMenu.incidentMenu);
+		isElementDisplayed(Locators.TopMenu.NewIncident);
+		
+		isElementDisplayed(Locators.IncidentPage.Summery);
+		isElementDisplayed(Locators.IncidentPage.Status);
+
+	 
+ }
 
 }

@@ -12,6 +12,7 @@ import java.io.InputStream;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -47,7 +48,12 @@ public class SeleniumWrapper extends ElementLocators {
 		waitForElementToClick(locator);
 		return getElement(locator).getText();
 	}
+	protected Dimension getElementCount(String locator){
+		//waitForElementToClick(locator);
+		return getElement(locator).getSize();
+	}
 
+	
 	private void waitForElementToClick(String locator) {
 
 		String locatorType = locator.split(":")[0];

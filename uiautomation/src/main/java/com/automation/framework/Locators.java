@@ -18,6 +18,11 @@ public interface Locators {
 	}
 	interface IncidentPage {
 		public static final String description ="id:ext-comp-1790";
+		public static final String Summery ="xpath://html/body/div[1]/div[2]/div[1]/div/div/div/div[1]/div/div/div[2]/div/div[2]/div[1]/div/div/div/div[1]/div/div[1]/div[1]/div[1]/div/table/thead/tr/td[2]/div";
+		public static final String Status ="xpath://html/body/div[1]/div[2]/div[1]/div/div/div/div[1]/div/div/div[2]/div/div[2]/div[1]/div/div/div/div[1]/div/div[1]/div[1]/div[1]/div/table/thead/tr/td[3]/div";
+		public static final String PageText ="id:ext-comp-1247";
+		public static final String Column="xpath:/html/body/div[1]/div[2]/div[1]/div/div/div/div[1]/div/div/div[2]/div/div[2]/div[1]/div/div/div/div[1]/div/div[1]/div[1]/div[1]/div/table/thead/tr/td[*]";
+		public static final String Row="xpath:/html/body/div[1]/div[2]/div[1]/div/div/div/div[1]/div/div/div[2]/div/div[2]/div[1]/div/div/div/div[1]/div/div[1]/div[1]/div[1]/div/table/thead/tr[*]/td[1]";
 	}
 	interface LogOutPage{
 		public static final String LogOutBtn ="id:ext-gen160";
@@ -65,8 +70,11 @@ public interface Locators {
 		public static final String IconLocale="id:ext-gen244";//xpath://html/body/div[13]/ul/li[2]/a/img";
 		public static final String IconPicture ="id:ext-gen246";//xpath://html/body/div[13]/ul/li[3]/a/img";
 		public static final String Configuration ="id:ext-gen174";
-		public static final String MorePop ="id:ext-gen1308";
+		public static final String MorePop ="id:ext-comp-1308";
 		public static final String More ="id:ext-gen166";
+		public static final String Locale ="id:ext-gen238";
+		public static final String LocaleSubMenu="id:ext-comp-1272";
+		public static final String SelectedLocale="id:ext-gen257";
 	
 	};
 	

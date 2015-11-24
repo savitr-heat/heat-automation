@@ -58,16 +58,22 @@ public class CommonTest extends BaseTest{
 		commonPage.UserName();
 		commonPage.SubMenu();
 		commonPage.SubMenuLinks();
-	}*/
+	}
 	@Test
 	public void MoreTest() throws Exception{
 		commonPage.loginToApp("connector.test", "conrotcd3$");
 		commonPage.More();
-		
-
-		
 	}
-	
+	@Test
+	public void LocaleSubMenuTest() throws Exception {
+		commonPage.SubMenu();
+		commonPage.Locale();
+	}*/
+	@Test
+	public void IncidentTest() throws Exception{
+		commonPage.loginToApp("connector.test", "conrotcd3$");
+		commonPage.Incident();
+	}
 	
 
 

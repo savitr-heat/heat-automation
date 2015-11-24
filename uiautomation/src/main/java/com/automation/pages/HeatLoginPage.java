@@ -4,10 +4,10 @@ import java.io.IOException;
 
 import org.openqa.selenium.WebDriver;
 
+import com.automation.framework.HeatWrapper;
 import com.automation.framework.Locators;
-import com.automation.framework.SeleniumWrapper;
 
-public class HeatLoginPage extends SeleniumWrapper {
+public class HeatLoginPage extends HeatWrapper {
 	
 	public HeatLoginPage(WebDriver driver) throws IOException
 	{
@@ -41,7 +41,7 @@ public class HeatLoginPage extends SeleniumWrapper {
 		sendTextToElement(Locators.LoginPage.username, username);
 		sendTextToElement(Locators.LoginPage.password, password);
 		clickElement(Locators.LoginPage.loginBtn);
-				
+	    
 		isElementDisplayed(Locators.Generic.accessDenied);
 	}
 	public void logoutFrmApp() throws Exception{
