@@ -187,7 +187,7 @@ public class SeleniumWrapper extends ElementLocators {
 
 		action.moveToElement(subElement);
 
-		action.click();
+		action.click(); 
 
 		action.perform();
 	}
