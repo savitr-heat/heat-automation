@@ -15,6 +15,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -173,6 +174,22 @@ public class SeleniumWrapper extends ElementLocators {
 		waitForElementToDisplay(locator);
 		Assert.assertTrue(isElementDisplayed(locator), "Element " + locator + "not displayed on page");
 
+	}
+	
+	protected void actionElement(String mainLocator, String subLocator) {
+
+		WebElement element = getElement(mainLocator);
+		Actions action = new Actions(driver);
+
+		action.moveToElement(element).perform();
+
+		WebElement subElement = getElement(mainLocator);
+
+		action.moveToElement(subElement);
+
+		action.click();
+
+		action.perform();
 	}
 	
 	
